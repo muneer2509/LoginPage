@@ -3,30 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main Dashboard</title>
-  <link rel="stylesheet" href="index.css">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
 </head>
-<body class="zero">
+<body>
   <div class="one">
-    <h3>Menu</h3>
-    <ul>
-      <li>All Users</li>
-      <li>User Uploaded Files</li>
-      <li>Verifications</li>
-    </ul>
-  </div>
-  <div class="main">
-    <div class="three">
-      <button class="four">Logout</button>
-    </div>
-    <div class="two">
-      <h2>Upload File</h2>
-      <form>
-        <input type="file" class="five" required>
-        <br><br>
-        <button type="submit" class="six">Upload</button>
-      </form>
-    </div>
+    <h2>Login</h2>
+    <form action="dashboard.html"  method="get">
+      <label for="un">Username</label><br>
+      <input type="text" id="un" name="username" placeholder="Enter your username"><br><br>
+
+      <label for="pwd">Password</label><br>
+      <input type="password" id="pwd" name="password" placeholder="Enter your password"><br><br>
+
+      <button  type="submit">Login </button>
+    </form>
+    <p>Don’t have an account? <a href="register.html">Register</a></p>
   </div>
 </body>
 </html>
